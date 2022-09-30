@@ -1,0 +1,141 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul, li, a{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color:black;
+    text-decoration: none;
+}
+ul+li{
+    left: 0;
+}
+header{
+    margin-top: 0rem;
+    margin-left: 0rem;
+    padding : 17px 3%;
+}
+
+
+nav{
+    margin-top: 0rem;
+    margin-left: 2%;
+    width : 96%;
+    display: flex;
+}
+nav a{
+    font-weight:bold;
+}
+
+section{
+    margin-top: 1rem;
+    margin-left: 15%;
+    width : 70%;
+    height : 30rem;
+}
+footer{
+    margin-top: 4rem;
+    margin-left: 5%;
+    width : 90%;
+}
+
+.logo{
+    cursor: pointer;
+    border-radius : 50%;
+    width : 70px;
+    height : 50px;
+}
+.containerProduct{
+    display : flex;
+}
+.pageTitle{
+
+}
+.headerLinks li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.headerLinks li a{
+    transition: all 0.3s ease 0s;
+}
+.headerLinks li a:hover {
+    color : cadetblue;
+}
+
+.navLinks li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.navLinks li a{
+    transition: all 0.3s ease 0s;
+}
+.navLinks li a:hover {
+    color : cadetblue;
+}
+.productImage{
+    height: 250px;
+    width: 100%;
+    border-radius: 10%;
+}
+.product{
+    border: 1px solid black;
+    width : 20%;
+    justify-content: space-around;
+    margin :auto 15px;
+    padding: 5px;
+    border-radius : 5%;
+
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    font-size: 16px;
+    color:antiquewhite;
+    content: "/\00a0";
+}
+.pric1{
+    color: #7b7b7a;
+}
+.pric3{
+    color: green;
+}
+.blod{
+    font-weight : bold;
+}
+
+@media  screen  and (max-width: 900px){
+    .containerProduct{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .product{
+        width: 80%;
+    }
+    footer{
+        margin-top: 0px;
+    }
+    a{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 690px) {
+
+    a{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 570px) {
+    .containerProduct{
+        grid-template-columns: auto;
+    }
+    .productImage{
+        width: 100%;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+
+}
