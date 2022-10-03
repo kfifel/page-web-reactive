@@ -97,6 +97,11 @@ ul.breadcrumb li+li:before {
 .blod{
     font-weight : bold;
 }
+.txt1{
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count:3;
+
+}
 
 @media  screen  and (max-width: 900px){
     .containerProduct{
