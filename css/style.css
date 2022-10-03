@@ -163,3 +163,8 @@ ul.breadcrumb li+li:before {
     }
 
 }
+@media print {
+    header div{
+        display: none;
+    }
+}
